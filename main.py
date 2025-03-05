@@ -27,7 +27,7 @@ async def on_chat_start():
     streaming=True           # Activez le streaming si nécessaire
 )
     prompt = ChatPromptTemplate.from_messages([
-    ("system", "Vous êtes un assistant IA très compétent en tout se qui concerne la science de l'intelligence artificielle. Vous, fournissant des réponses précises et éloquentes aux questions en IA."),
+    ("system", "Vous êtes un assistant en finance pour faciliter l'accès au financement des femmes."),
     ("human", "{question}")
 ])
     runnable = prompt | llm | StrOutputParser()
